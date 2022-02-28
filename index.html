@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCooK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase active">
+        <header>
+            <h2>FOOD</h2>
+            <div class="toggle active"></div>
+
+        </header>
+       <video src="food.mp4" muted loop autoplay id="video"></video>
+       <div class="overlay"></div>
+       <div class="text">
+           <h2>Donut kill my vibe.</h2>
+           <p>
+            I just want someone to look at me the way I look at food.
+           </p>
+           <a href="#">ORDER FOOD</a>
+        
+       </div>
+       <ul class="social">
+        <li><a href="https://www.instagram.com/_inert___/"><img src="instagram.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/deepak-chattwani-340bb8227/"><img src="linkedin.png"></a></li>
+      
+      </ul>
+
+    </section>
+    <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Restaurants</a></li>
+          <li><a href="#">Dishes</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <script>
+      const showcase = document.querySelector('.showcase');
+           const menuToggle = document.querySelector('.toggle');
+
+      menuToggle.addEventListener('click', () => {
+        showcase.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      })
+      </script>
+</body>
+</html>
